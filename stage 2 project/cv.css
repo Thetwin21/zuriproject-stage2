@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Quicksand:wght@300;400&family=Rajdhani:wght@400;500&family=Tenali+Ramakrishna&family=Unica+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@300&family=STIX+Two+Text&family=Tenali+Ramakrishna&display=swap');
+
+/* font-family: 'Merienda', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Tenali Ramakrishna', sans-serif;
+font-family: 'Unica One', cursive; 
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'STIX Two Text', serif;
+font-family: 'Tenali Ramakrishna', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+}
+h3 {
+  font-family: "Unica One", cursive;
+  font-weight: 300;
+}
+h1 {
+  font-family: "Rajdhani", sans-serif;
+}
+p {
+  font-family: "Tenali Ramakrishna", sans-serif;
+  font-size: 25px;
+}
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "aside main "
+    "aside main"
+    "aside main"
+    "footer footer";
+  align-items: center;
+  line-height: 2;
+  margin-bottom: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: main;
+  background: #fefefe;
+  padding: 40px;
+  height: 100%;
+}
+main .header {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  line-height: 1;
+  background: #140c01;
+  width: 100%;
+  color: #c9ae87;
+  padding: 20px;
+  top: 0;
+}
+/* brand logo */
+.brand_logo {
+  height: 50px;
+  margin-bottom: 5px;
+}
+.brand_logo img {
+  height: 100%;
+}
+main .header .text {
+  text-align: center;
+  padding: 15px;
+}
+main .header h1 {
+  text-transform: uppercase;
+  font-size: 8vmin;
+}
+main .header h4 {
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+main .submain {
+  margin-top: 140px;
+  padding: 20px;
+}
+main .submain .education h2 {
+  text-transform: capitalize;
+}
+main .submain .line {
+  height: 2px;
+  width: 100%;
+  background: #140c01;
+}
+/* all the div with class content in education container */
+.submain .education .text_box > div {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  line-height: 1;
+}
+.submain .education .text_box {
+  margin-top: 10px;
+}
+.work .text_box ,
+.languauge .lang{
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+/* aside styling */
+aside {
+  padding: 50px;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+aside .aside_container {
+  position: relative;
+  grid-area: aside;
+  background: #c9ae87;
+  color: #140c01;
+  height: 100%;
+}
+/* aside imge styling */
+aside .aside_container .profile_image {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  padding-bottom: 0px;
+  align-items: center;
+  justify-items: center;
+  margin: 15px;
+  margin-bottom: 10px;
+}
+aside .aside_container .profile_image .img_box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+aside .aside_container .profile_image .img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* aside info header styling */
+aside .aside_container .info_container .info_heading {
+  text-transform: uppercase;
+  font-size: 2vmin;
+}
+aside .info_container {
+  padding: 30px;
+  line-height: 30px;
+}
+aside .info_container > div {
+  margin-top: 10px;
+}
+.skills .content p > a {
+    color: #140c01;
+    text-decoration: none;
+} 
+
+aside .aside_container .line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fefefe;
+  border-radius: 10px;
+  margin-right: 0;
+}
+aside .profile p {
+  margin-top: 8px;
+}
+/* all div with class content */
+.content {
+  padding: 10px;
+}
+aside .aside_container .hobbies .hobby_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5em;
+  padding: 10px;
+}
+aside .aside_container .hobbies .hobby_box span {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* skill html progress styling */
+
+.progress_html {
+  width: 300px;
+}
+.progress_html .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.progress_html .text .per {
+  text-align: right;
+  padding: 2px;
+}
+.progress_html .progress_box {
+  height: 10px;
+  width: 100%;
+  background: #c9ae87;
+  border-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+.progress_html .progress_box .progress {
+  width: 90%;
+  height: 100%;
+  background: #140c01;
+  border-radius: 10px;
+  animation: html 5s ease-in-out 3s;
+}
+@keyframes html {
+    10%{
+        width: 0;
+    }
+     50%{         
+       width: 100%;
+     }
+     100%{         
+          width: 90%;
+     }
+}
+/* skill css progress styling */
+.progress_css {
+  width: 300px;
+}
+.progress_css .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.progress_css .text .per {
+  text-align: right;
+  padding: 2px;
+}
+.progress_css .progress_box {
+  height: 10px;
+  width: 100%;
+  background: #c9ae87;
+  border-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+.progress_css .progress_box .progress {
+  width: 80%;
+  height: 100%;
+  background: #140c01;
+  border-radius: 10px;
+  animation: css 5s ease-in-out 3s;
+}
+@keyframes css {
+    10%{
+        width: 0;
+    }
+     50%{         
+       width: 100%;
+     }
+     100%{         
+          width: 80%;
+     }
+}
+/* skill ui progress styling */
+.progress_ui {
+  width: 300px;
+}
+.progress_ui .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.progress_ui .text .per {
+  text-align: right;
+  padding: 2px;
+}
+.progress_ui .progress_box {
+  height: 10px;
+  width: 100%;
+  background: #c9ae87;
+  border-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+.progress_ui .progress_box .progress {
+  width: 64%;
+  height: 100%;
+  background: #140c01;
+  border-radius: 10px;
+  animation: ui 5s ease-in-out 3s;
+}
+@keyframes ui {
+    10%{
+        width: 0;
+    }
+     50%{         
+       width: 100%;
+     }
+     100%{         
+          width: 64%;
+     }
+}
+/* skill javascript progress styling */
+.progress_javascript {
+  width: 300px;
+}
+.progress_javascript .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.progress_javascript .text .per {
+  text-align: right;
+  padding: 2px;
+}
+.progress_javascript .progress_box {
+  height: 10px;
+  width: 100%;
+  background: #c9ae87;
+  border-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+.progress_javascript .progress_box .progress {
+  width: 57%;
+  height: 100%;
+  background: #140c01;
+  border-radius: 10px;
+  animation: javascript 5s ease-in-out 3s;
+}
+@keyframes javascript {
+    10%{
+        width: 0;
+    }
+     50%{         
+       width: 100%;
+     }
+     100%{         
+          width: 57%;
+     }
+}
+/* skill react progress styling */
+.progress_react {
+  width: 300px;
+}
+.progress_react .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+.progress_react .text .per {
+  text-align: right;
+  padding: 2px;
+}
+.progress_react .progress_box {
+  height: 10px;
+  width: 100%;
+  background: #c9ae87;
+  border-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+.progress_react .progress_box .progress {
+  width: 17%;
+  height: 100%;
+  background: #140c01;
+  border-radius: 10px;
+  animation: react 5s ease-in-out 3s;
+}
+@keyframes react {
+    10%{
+        width: 0;
+    }
+     50%{         
+       width: 100%;
+     }
+     100%{         
+          width: 17%;
+     }
+}
+
+.work,
+.skills,
+.language {
+  margin-top: 10px;
+}
+.language .lang li {
+  list-style: none;
+}
+/* footer */
+footer {
+  grid-area: footer;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background: #140c01;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+footer .text .brand_logo image{
+    width: 100px;
+}
+footer h3 {
+    font-size: 6vmin;
+}
+footer p {
+  font-family: "Merienda", cursive;
+  font-size: 2.5vmin;
+}
+@media (max-width: 796px) {
+    .container {
+    position: relative;  
+    grid-template-columns: 1fr 1.5fr;
+    line-height: 2;
+    }
+    p {
+   font-family: 'Tenali Ramakrishna', sans-serif;
+    }
+  main .header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  main {
+    padding: 10px;
+  }
+  main .header {
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  main .header h1 {
+  text-transform: uppercase;
+  font-size: 5vmin;
+}
+main .header h4 {
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+main .submain {
+  padding: 10px;
+}
+main .submain .education .text_box > div {
+    gap: .5em;
+}
+
+aside {
+    padding: 20px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 665px) {
+    .container {
+        position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  'aside'
+  'main'
+  'footer';
+  overflow-x: hidden;
+}
+aside {
+    grid-area: aside;
+    background: #c9ae87;
+    margin-top: 130px;
+    padding: 0;
+    padding-top: 15px;
+    z-index: 0;
+}
+aside .aside_container .profile_image {
+    padding: 5px;
+    padding-top: 10px;
+}
+
+aside .aside_container .profile_image .img_box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+aside .aside_container .profile_image .img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main {
+    grid-area: main;
+}
+main .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    z-index: 9;
+}
+main .header .space {
+    display: none;
+}
+main .submain {
+    margin: 0;
+}
+footer {
+    display: grid;
+    grid-area: footer;
+    height: 30vh;
+    width: 100%;
+}
+footer .text {
+    width: 100%;
+}
+footer h3 {
+    font-size: 5vmin;
+}
+}

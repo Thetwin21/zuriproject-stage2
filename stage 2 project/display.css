@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@300&family=STIX+Two+Text&family=Tenali+Ramakrishna&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fefefe;
+}
+h1 {
+  font-family: "Rajdhani", sans-serif;
+}
+p {
+  font-family: "Tenali Ramakrishna", sans-serif;
+  font-size: 25px;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+main {
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+}
+main .text_box {
+    display: grid;
+    width: 60vw;
+    height: 40vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.5),
+     -5px -8px 20px #fff;
+}
+.text_box:hover {
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.5),
+    -5px -15px 20px #fff;;
+  transform: scale(1.025);
+}
+.text_box .text h1 {
+font-size: 7vmin;
+text-align: center;
+text-transform: uppercase;
+}
+
+.text_box .text p {
+    color: rgba(0,0,0,0.7);
+    letter-spacing: .5em;
+}
+.text_box .text {
+line-height: 1.2;
+}
+.container .header {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+}
+.container .header .img_box {
+    width: 100%;
+    height: 20vh;
+    padding: 10px 40px;   
+}
+.container .header .img_box img {
+  width: 100%;
+  height: 100%;
+}
+.text_box .text button a {
+text-decoration: none;
+color: #000;
+}
+.text_box .text button a:hover {
+    letter-spacing: 1px;
+}
+.text_box .text button {
+    width: 7em;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    background: rgba(0,0,0,0.23);
+}
+@media (max-width: 786px) {
+    main .text_box {
+    top: 40px;
+    display: grid;
+    width: 80vw;
+    height: 50vh;
+    }
+    .text_box .text button {
+    width: 9em;
+    height: 3em;
+    }
+    .container .header .img_box {
+    width: 100%;
+    height: 20vh;
+    padding: 10px;   
+}
+}
